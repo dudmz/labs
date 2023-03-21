@@ -24,3 +24,5 @@ execution.
 
 For some reason, it fails to connect the API 3 or 4 times before establishing connectivity,
 I suspect that the docker's container lags in resolving the hostname.
+
+I raised the `sleep()` timer to be 3s and being triggered before HTTP GET, and the connectivity failure is solved.

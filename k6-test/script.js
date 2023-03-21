@@ -7,6 +7,6 @@ export const options = {
 };
 
 export default () => {
+    sleep(3)
     http.get("http://damazios-MacBook-Pro.local:8080/messages")
-    sleep(1)
 }
